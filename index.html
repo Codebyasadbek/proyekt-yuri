@@ -2,16 +2,17 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Стоматология «Пинь Чжэн» в Фуюане — лечение зубов в Китае рядом с Хабаровском</title>
-  <meta name="description" content="Стоматологическая клиника «Пинь Чжэн» в Фуюане, 60 км от Хабаровска. Имплантация, коронки, лечение и чистка зубов. Бесплатный осмотр, цены в юанях, запись на русском.">
-  <meta name="theme-color" content="#1b5d7e">
+  <meta name="description" content="Стоматологическая клиника «Пинь Чжэн» в Фуюане, 60 км от Хабаровска. Имплантация от 2 380 ¥, коронки, лечение и чистка зубов. Бесплатный осмотр, запись на русском.">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:title" content="Стоматология «Пинь Чжэн» в Фуюане">
   <meta property="og:description" content="Имплантация, коронки, лечение и чистка зубов в 60 км от Хабаровска. Бесплатный осмотр, запись на русском.">
   <meta property="og:image" content="img/og.jpg">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/i18n.js" defer></script>
   <script src="js/main.js" defer></script>
@@ -35,36 +36,51 @@
 </head>
 <body>
   <svg class="sprite" aria-hidden="true" focusable="false">
-    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7.2 3C4.9 3 3 4.9 3 7.3c0 2.4.9 3.7 1.5 5.7.5 1.7.7 3.6 1 5.4.2 1.2.7 2.6 1.8 2.6 1.4 0 1.6-2 2-3.5.3-1.2.7-2.5 2.7-2.5s2.4 1.3 2.7 2.5c.4 1.5.6 3.5 2 3.5 1.1 0 1.6-1.4 1.8-2.6.3-1.8.5-3.7 1-5.4.6-2 1.5-3.3 1.5-5.7C21 4.9 19.1 3 16.8 3c-1.9 0-2.8 1.1-4.8 1.1S9.1 3 7.2 3z"/></symbol>
-    <symbol id="i-implant" viewBox="0 0 24 24"><path d="M8 3h8a3 3 0 0 1 3 3c0 2-1 3-3 3H8C6 9 5 8 5 6a3 3 0 0 1 3-3z"/><path d="M12 9v12M9 12h6M9.5 15h5M10 18h4"/></symbol>
-    <symbol id="i-crown" viewBox="0 0 24 24"><use href="#i-tooth"/><path d="M4 8h16"/></symbol>
-    <symbol id="i-treatment" viewBox="0 0 24 24"><use href="#i-tooth"/><circle cx="12" cy="9" r="2"/></symbol>
-    <symbol id="i-braces" viewBox="0 0 24 24"><rect x="2.5" y="7" width="5" height="10" rx="2"/><rect x="9.5" y="7" width="5" height="10" rx="2"/><rect x="16.5" y="7" width="5" height="10" rx="2"/><path d="M2 12h20"/></symbol>
-    <symbol id="i-gums" viewBox="0 0 24 24"><path d="M3 10c3-3 6-4 9-4s6 1 9 4"/><path d="M6 9v4c0 3 1 6 2 6s1.5-3 2-5M18 9v4c0 3-1 6-2 6s-1.5-3-2-5"/></symbol>
-    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></symbol>
-    <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 1.5 2.3 2.2 4 2.2s3-.7 4-2.2M9 9.5h.01M15 9.5h.01"/></symbol>
-    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7-4.7-1.8 4.7-1.8z"/><path d="M19 15l.8 2.2 2.2.8-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="10" fill="#d7322a"/>
+      <g fill="#fff">
+        <rect x="10.5" y="9.6" width="19" height="3.2" rx="1"/>
+        <rect x="18.4" y="9.6" width="3.2" height="19.6" rx="1"/>
+        <rect x="21" y="18.4" width="7.4" height="3.2" rx="1"/>
+        <rect x="12.4" y="19.2" width="3.2" height="10" rx="1"/>
+        <rect x="8.6" y="26.8" width="22.8" height="3.4" rx="1"/>
+      </g>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></symbol>
   </svg>
 
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Перейти к содержанию</a>
 
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="topbar.address">Китай, г. Фуюань, ул. Инбинь, 93</span></span>
+      <span class="topbar__item"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="topbar.hours">Ежедневно 08:00–18:00 по местному времени</span></span>
+      <a class="topbar__link" href="#route" data-i18n="topbar.route">Как добраться из Хабаровска</a>
+    </div>
+  </div>
+
   <header class="header" id="top">
     <div class="container header__inner">
       <a class="brand" href="#top">
-        <svg class="brand__logo" aria-hidden="true"><use href="#i-tooth"/></svg>
+        <svg class="brand__logo" aria-hidden="true"><use href="#i-logo"/></svg>
         <span class="brand__text">
           <span class="brand__name" data-i18n="brand.name">Пинь Чжэн</span>
-          <span class="brand__sub" data-i18n="brand.sub">Стоматология · Фуюань</span>
+          <span class="brand__sub" data-i18n="brand.sub">стоматология в Фуюане</span>
         </span>
       </a>
 
       <nav class="nav" id="nav" aria-label="Меню" data-i18n-attr="aria-label:nav.label">
-        <a href="#about" data-i18n="nav.about">О клинике</a>
         <a href="#services" data-i18n="nav.services">Услуги и цены</a>
-        <a href="#doctors" data-i18n="nav.doctors">Врачи</a>
+        <a href="#clinic" data-i18n="nav.clinic">Клиника</a>
         <a href="#route" data-i18n="nav.route">Как добраться</a>
-        <a href="#contact" data-i18n="nav.contact">Контакты</a>
-        <a href="#contact" class="btn btn--primary nav__cta" data-i18n="nav.book">Записаться</a>
+        <a href="#doctors" data-i18n="nav.doctors">Врачи</a>
+        <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+        <a href="#booking" class="btn btn--primary nav__cta" data-i18n="nav.book">Записаться</a>
       </nav>
 
       <div class="header__actions">
@@ -72,7 +88,7 @@
           <button type="button" class="lang-switch__btn is-active" data-lang="ru" aria-pressed="true">RU</button>
           <button type="button" class="lang-switch__btn" data-lang="zh" aria-pressed="false">中文</button>
         </div>
-        <a class="btn btn--primary btn--sm header__cta" href="#contact" data-i18n="nav.book">Записаться</a>
+        <a class="btn btn--primary header__cta" href="#booking" data-i18n="nav.book">Записаться</a>
         <button type="button" class="burger" id="burger" aria-controls="nav" aria-expanded="false" aria-label="Меню" data-i18n-attr="aria-label:nav.label">
           <span></span><span></span><span></span>
         </button>
@@ -81,83 +97,153 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <img class="hero__bg" src="img/hero.jpg" alt="" width="1599" height="899" fetchpriority="high">
-      <div class="container hero__content">
-        <p class="hero__eyebrow" data-i18n="hero.eyebrow">Стоматология в Китае · 60 км от Хабаровска</p>
-        <h1 class="hero__title" data-i18n="hero.title">Стоматология «Пинь Чжэн» в&nbsp;Фуюане</h1>
-        <p class="hero__lead" data-i18n="hero.lead">Имплантация, коронки, лечение и профессиональная чистка зубов на современном оборудовании. Осмотр и консультация бесплатно, запись на русском языке.</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#contact" data-i18n="hero.book">Записаться на приём</a>
-          <a class="btn btn--ghost" href="#route" data-i18n="hero.route">Как добраться</a>
-        </div>
-        <ul class="chips">
-          <li data-i18n="hero.chip.free">Бесплатный осмотр</li>
-          <li data-i18n="hero.chip.implant">Имплантат-центр</li>
-          <li data-i18n="hero.chip.kids">Детская стоматология</li>
-          <li data-i18n="hero.chip.painless">Комфортное лечение без боли</li>
-        </ul>
-      </div>
-    </section>
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="badge"><span class="badge__dot" aria-hidden="true"></span><span data-i18n="hero.badge">60 км от Хабаровска · принимаем пациентов из России</span></p>
+          <h1 class="hero__title" data-i18n="hero.title">Лечение и&nbsp;имплантация зубов <span class="hl">в&nbsp;Фуюане</span></h1>
+          <p class="hero__lead" data-i18n="hero.lead">Стоматология «Пинь Чжэн» с цифровой диагностикой и отдельными кабинетами. Осмотр и консультация бесплатно, запись на русском языке.</p>
 
-    <section class="facts" aria-label="Коротко о клинике" data-i18n-attr="aria-label:facts.label">
-      <div class="container facts__grid">
-        <div class="fact">
-          <b data-i18n="facts.free.title">Бесплатно</b>
-          <span data-i18n="facts.free.text">осмотр и консультация</span>
-        </div>
-        <div class="fact">
-          <b data-i18n="facts.digital.title">Цифровая</b>
-          <span data-i18n="facts.digital.text">диагностика и рентген</span>
-        </div>
-        <div class="fact">
-          <b>08:00–18:00</b>
-          <span data-i18n="facts.hours.text">ежедневно, по местному времени</span>
-        </div>
-        <div class="fact">
-          <b data-i18n="facts.distance.title">60 км</b>
-          <span data-i18n="facts.distance.text">от Хабаровска</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container about">
-        <div class="about__text">
-          <p class="kicker" data-i18n="about.kicker">О клинике</p>
-          <h2 class="section__title" data-i18n="about.title">Современная стоматология в Фуюане</h2>
-          <p data-i18n="about.p1">«Пинь Чжэн» — стоматологическая поликлиника, где имплантация, протезирование, лечение и детская стоматология собраны в одном месте.</p>
-          <p data-i18n="about.p2">Диагностика на цифровом оборудовании, индивидуальный план лечения для каждого пациента и профилактическая программа после лечения.</p>
-          <ul class="checklist">
-            <li data-i18n="about.point1">Просторный и светлый зал</li>
-            <li data-i18n="about.point2">Отдельные лечебные кабинеты</li>
-            <li data-i18n="about.point3">Строгое соблюдение правил стерилизации</li>
-            <li data-i18n="about.point4">Индивидуальный план лечения</li>
+          <ul class="hero__prices">
+            <li class="hero__price hero__price--free"><b>0 ¥</b><span data-i18n="hero.price1">осмотр и консультация</span></li>
+            <li class="hero__price"><b data-i18n="hero.price2.value">от 198 ¥</b><span data-i18n="hero.price2">профессиональная чистка</span></li>
+            <li class="hero__price"><b data-i18n="hero.price3.value">от 2 380 ¥</b><span data-i18n="hero.price3">имплантация зуба</span></li>
           </ul>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#booking" data-i18n="cta.freeExam">Записаться на бесплатный осмотр</a>
+            <a class="link-arrow" href="#route"><span data-i18n="hero.route">Как добраться</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
         </div>
 
-        <div class="gallery">
-          <figure class="gallery__item gallery__item--wide">
-            <button type="button" class="zoom" data-full="img/reception.jpg"><img src="img/reception.jpg" alt="Ресепшн" data-i18n-attr="alt:gallery.reception" width="941" height="629" loading="lazy"></button>
-            <figcaption data-i18n="gallery.reception">Ресепшн</figcaption>
-          </figure>
-          <figure class="gallery__item">
+        <div class="hero__media">
+          <img src="img/hero.jpg" alt="Вывеска клиники «Пинь Чжэн» на улице Инбинь" data-i18n-attr="alt:hero.photo" width="1599" height="899" fetchpriority="high">
+          <div class="hero__card">
+            <svg class="hero__card-logo" aria-hidden="true"><use href="#i-logo"/></svg>
+            <div>
+              <b lang="zh-CN">品正口腔门诊部</b>
+              <span data-i18n="hero.card">ул. Инбинь, 93 · Фуюань</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="services.title">Услуги и цены</h2>
+          <p class="section-head__note" data-i18n="services.note">Цены в юанях. Точную стоимость врач назовёт после бесплатного осмотра.</p>
+        </div>
+
+        <ul class="price-list">
+          <li class="price-list__item price-list__item--free">
+            <div class="price-list__name"><b data-i18n="service.consult">Осмотр и консультация</b><span data-i18n="service.consult.text">Осмотр и план лечения</span></div>
+            <span class="price-list__dots" aria-hidden="true"></span>
+            <span class="price-list__price" data-i18n="service.consult.price">Бесплатно</span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__name"><b data-i18n="service.cleaning">Профессиональная чистка</b><span data-i18n="service.cleaning.text">Удаление камня и налёта</span></div>
+            <span class="price-list__dots" aria-hidden="true"></span>
+            <span class="price-list__price">198–398 ¥</span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__name"><b data-i18n="service.fillings">Пломбирование и протезирование</b><span data-i18n="service.fillings.text">Пломбы и восстановление зубов</span></div>
+            <span class="price-list__dots" aria-hidden="true"></span>
+            <span class="price-list__price">240–550 ¥</span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__name"><b data-i18n="service.endo">Лечение каналов</b><span data-i18n="service.endo.text">Эндодонтическое лечение</span></div>
+            <span class="price-list__dots" aria-hidden="true"></span>
+            <span class="price-list__price">360–1 100 ¥</span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__name"><b data-i18n="service.crowns">Керамические коронки</b><span data-i18n="service.crowns.text">Восстановление формы и цвета зуба</span></div>
+            <span class="price-list__dots" aria-hidden="true"></span>
+            <span class="price-list__price">320–760 ¥</span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__name"><b data-i18n="service.ceramic">Коронки из цельной керамики</b><span data-i18n="service.ceramic.text">Эстетичные коронки без металла</span></div>
+            <span class="price-list__dots" aria-hidden="true"></span>
+            <span class="price-list__price">900–6 600 ¥</span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__name"><b data-i18n="service.implant">Имплантация зубов</b><span data-i18n="service.implant.text">Восстановление зуба на импланте</span></div>
+            <span class="price-list__dots" aria-hidden="true"></span>
+            <span class="price-list__price">2 380–6 800 ¥</span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__name"><b data-i18n="service.dentures">Полное протезирование</b><span data-i18n="service.dentures.text">Протезы при отсутствии всех зубов</span></div>
+            <span class="price-list__dots" aria-hidden="true"></span>
+            <span class="price-list__price">3 500–5 600 ¥</span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__name"><b data-i18n="service.ortho">Эстетическая ортодонтия</b><span data-i18n="service.ortho.text">Выравнивание зубов</span></div>
+            <span class="price-list__dots" aria-hidden="true"></span>
+            <span class="price-list__price">2 800–4 800 ¥</span>
+          </li>
+        </ul>
+
+        <div class="services-cta">
+          <p data-i18n="services.more">Также лечим дёсны, принимаем детей, делаем отбеливание и виниры. Стоимость — после осмотра.</p>
+          <a class="btn btn--primary" href="#booking" data-i18n="cta.freeExam">Записаться на бесплатный осмотр</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="clinic">
+      <div class="container clinic">
+        <figure class="clinic__media">
+          <button type="button" class="zoom" data-full="img/reception.jpg"><img src="img/reception.jpg" alt="Ресепшн клиники" data-i18n-attr="alt:gallery.reception" width="941" height="629" loading="lazy"></button>
+        </figure>
+
+        <div class="clinic__text">
+          <h2 class="section-title" data-i18n="clinic.title">Светлая клиника с цифровым оборудованием</h2>
+          <p class="clinic__lead" data-i18n="clinic.lead">Ресепшн и зона ожидания, отдельные кабинеты для лечения, рентгена и детского приёма.</p>
+          <ol class="features">
+            <li>
+              <span class="features__num">01</span>
+              <h3 data-i18n="clinic.f1.title">Цифровая диагностика</h3>
+              <p data-i18n="clinic.f1.text">Панорамный рентген, снимки на экране прямо в кабинете</p>
+            </li>
+            <li>
+              <span class="features__num">02</span>
+              <h3 data-i18n="clinic.f2.title">Стерильность</h3>
+              <p data-i18n="clinic.f2.text">Строгое соблюдение правил стерилизации</p>
+            </li>
+            <li>
+              <span class="features__num">03</span>
+              <h3 data-i18n="clinic.f3.title">Отдельные кабинеты</h3>
+              <p data-i18n="clinic.f3.text">Просторный светлый зал и отдельные лечебные кабинеты</p>
+            </li>
+            <li>
+              <span class="features__num">04</span>
+              <h3 data-i18n="clinic.f4.title">Детский кабинет</h3>
+              <p data-i18n="clinic.f4.text">Своё кресло и спокойная обстановка для детей</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="photo-strip">
+          <figure>
             <button type="button" class="zoom" data-full="img/xray.jpg"><img src="img/xray.jpg" alt="Рентген-кабинет" data-i18n-attr="alt:gallery.xray" width="1000" height="612" loading="lazy"></button>
             <figcaption data-i18n="gallery.xray">Рентген-кабинет</figcaption>
           </figure>
-          <figure class="gallery__item">
+          <figure>
             <button type="button" class="zoom" data-full="img/implant.jpg"><img src="img/implant.jpg" alt="Хирургический кабинет" data-i18n-attr="alt:gallery.surgery" width="1000" height="750" loading="lazy"></button>
             <figcaption data-i18n="gallery.surgery">Хирургический кабинет</figcaption>
           </figure>
-          <figure class="gallery__item">
-            <button type="button" class="zoom" data-full="img/cabinet-2.jpg"><img src="img/cabinet-2.jpg" alt="Эстетическая стоматология" data-i18n-attr="alt:gallery.aesthetic" width="1000" height="650" loading="lazy"></button>
+          <figure>
+            <button type="button" class="zoom" data-full="img/cabinet-2.jpg"><img src="img/cabinet-2.jpg" alt="Кабинет эстетической стоматологии" data-i18n-attr="alt:gallery.aesthetic" width="1000" height="650" loading="lazy"></button>
             <figcaption data-i18n="gallery.aesthetic">Эстетическая стоматология</figcaption>
           </figure>
-          <figure class="gallery__item">
+          <figure>
             <button type="button" class="zoom" data-full="img/kids.jpg"><img src="img/kids.jpg" alt="Детский кабинет" data-i18n-attr="alt:gallery.kids" width="1000" height="650" loading="lazy"></button>
             <figcaption data-i18n="gallery.kids">Детский кабинет</figcaption>
           </figure>
-          <figure class="gallery__item">
+          <figure>
             <button type="button" class="zoom" data-full="img/cabinet.jpg"><img src="img/cabinet.jpg" alt="Лечебный кабинет" data-i18n-attr="alt:gallery.cabinet" width="800" height="1422" loading="lazy"></button>
             <figcaption data-i18n="gallery.cabinet">Лечебный кабинет</figcaption>
           </figure>
@@ -165,83 +251,61 @@
       </div>
     </section>
 
-    <section class="section section--tint" id="services">
+    <section class="section" id="route">
       <div class="container">
-        <p class="kicker" data-i18n="services.kicker">Услуги</p>
-        <h2 class="section__title" data-i18n="services.title">Что мы лечим</h2>
-
-        <div class="services">
-          <article class="service">
-            <svg class="service__icon" aria-hidden="true"><use href="#i-implant"/></svg>
-            <h3 data-i18n="service.implant.title">Имплантация зубов</h3>
-            <p data-i18n="service.implant.text">Восстановление отсутствующих зубов на имплантах.</p>
-          </article>
-          <article class="service">
-            <svg class="service__icon" aria-hidden="true"><use href="#i-crown"/></svg>
-            <h3 data-i18n="service.crowns.title">Коронки и протезирование</h3>
-            <p data-i18n="service.crowns.text">Керамические коронки, коронки из цельной керамики, полные протезы.</p>
-          </article>
-          <article class="service">
-            <svg class="service__icon" aria-hidden="true"><use href="#i-treatment"/></svg>
-            <h3 data-i18n="service.treatment.title">Лечение зубов</h3>
-            <p data-i18n="service.treatment.text">Пломбы, лечение каналов, восстановление разрушенных зубов.</p>
-          </article>
-          <article class="service">
-            <svg class="service__icon" aria-hidden="true"><use href="#i-braces"/></svg>
-            <h3 data-i18n="service.ortho.title">Выравнивание зубов</h3>
-            <p data-i18n="service.ortho.text">Эстетическая ортодонтия для взрослых и детей.</p>
-          </article>
-          <article class="service">
-            <svg class="service__icon" aria-hidden="true"><use href="#i-gums"/></svg>
-            <h3 data-i18n="service.gums.title">Лечение пародонтита</h3>
-            <p data-i18n="service.gums.text">Лечение дёсен и профилактика потери зубов.</p>
-          </article>
-          <article class="service">
-            <svg class="service__icon" aria-hidden="true"><use href="#i-drop"/></svg>
-            <h3 data-i18n="service.cleaning.title">Профессиональная чистка</h3>
-            <p data-i18n="service.cleaning.text">Удаление камня и налёта, профилактическая программа.</p>
-          </article>
-          <article class="service">
-            <svg class="service__icon" aria-hidden="true"><use href="#i-smile"/></svg>
-            <h3 data-i18n="service.kids.title">Детская стоматология</h3>
-            <p data-i18n="service.kids.text">Отдельный детский кабинет и спокойный приём для маленьких пациентов.</p>
-          </article>
-          <article class="service">
-            <svg class="service__icon" aria-hidden="true"><use href="#i-sparkle"/></svg>
-            <h3 data-i18n="service.aesthetic.title">Эстетическая стоматология</h3>
-            <p data-i18n="service.aesthetic.text">Отбеливание и виниры.</p>
-          </article>
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="route.title">Как добраться из Хабаровска</h2>
         </div>
 
-        <div class="prices" id="prices">
-          <div class="prices__head">
-            <h3 class="prices__title" data-i18n="prices.title">Стоимость лечения</h3>
-            <p class="muted" data-i18n="prices.note">Цены указаны в юанях. Точную стоимость врач назовёт после бесплатного осмотра.</p>
+        <ol class="route-steps">
+          <li>
+            <span class="route-steps__num">01</span>
+            <h3 data-i18n="route.step1.title">Хабаровск → Фуюань</h3>
+            <p data-i18n="route.step1.text">По Амуру. Расписание и билеты — на сайте <a href="https://khabarovskvodtrans.ru" target="_blank" rel="noopener">khabarovskvodtrans.ru</a></p>
+          </li>
+          <li>
+            <span class="route-steps__num">02</span>
+            <h3 data-i18n="route.step2.title">Порт → клиника</h3>
+            <p data-i18n="route.step2.text">На такси. Покажите водителю адрес на китайском — он ниже.</p>
+          </li>
+          <li>
+            <span class="route-steps__num">03</span>
+            <h3 data-i18n="route.step3.title">Ищите голубую вывеску</h3>
+            <p data-i18n="route.step3.text">Ул. Инбинь, 93: голубая вывеска с красным крестом и надписью 品正口腔.</p>
+          </li>
+        </ol>
+
+        <div class="route-grid">
+          <div class="ticket">
+            <div class="ticket__body">
+              <p class="ticket__label" data-i18n="ticket.label">Покажите водителю такси</p>
+              <p class="ticket__zh" lang="zh-CN">抚远市迎宾路93号<br>品正口腔门诊部</p>
+              <p class="ticket__ru" data-lang-only="ru">Фуюань, ул. Инбинь, 93 — клиника «Пинь Чжэн»</p>
+            </div>
+            <div class="ticket__actions">
+              <button type="button" class="btn btn--light" id="taxi-open"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg><span data-i18n="ticket.expand">На весь экран</span></button>
+              <button type="button" class="btn btn--ghost-light" id="address-copy"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="ticket.copy">Скопировать</span></button>
+              <a class="btn btn--ghost-light" data-lang-only="ru" href="https://yandex.ru/maps/?rtext=~48.358810%2C134.295738&amp;rtt=auto" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg><span>Маршрут в Яндекс Картах</span></a>
+              <a class="btn btn--ghost-light" data-lang-only="zh" hidden lang="zh-CN" href="https://uri.amap.com/marker?position=134.295738,48.358810&amp;name=%E5%93%81%E6%AD%A3%E5%8F%A3%E8%85%94%E9%97%A8%E8%AF%8A%E9%83%A8&amp;coordinate=wgs84&amp;callnative=1" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg><span>高德地图导航</span></a>
+            </div>
           </div>
-          <table class="price-table">
-            <thead>
-              <tr><th data-i18n="prices.service">Услуга</th><th data-i18n="prices.price">Цена, ¥</th></tr>
-            </thead>
-            <tbody>
-              <tr><td data-i18n="price.consult">Осмотр и консультация</td><td class="price-table__free" data-i18n="price.free">бесплатно</td></tr>
-              <tr><td data-i18n="price.cleaning">Профессиональная чистка зубов</td><td>198–398</td></tr>
-              <tr><td data-i18n="price.fillings">Пломбирование и протезирование</td><td>240–550</td></tr>
-              <tr><td data-i18n="price.endo">Лечение каналов (эндодонтия)</td><td>360–1 100</td></tr>
-              <tr><td data-i18n="price.crowns">Керамические коронки</td><td>320–760</td></tr>
-              <tr><td data-i18n="price.ceramic">Коронки из цельной керамики</td><td>900–6 600</td></tr>
-              <tr><td data-i18n="price.implant">Имплантация зубов</td><td>2 380–6 800</td></tr>
-              <tr><td data-i18n="price.dentures">Полное протезирование</td><td>3 500–5 600</td></tr>
-              <tr><td data-i18n="price.ortho">Эстетическая ортодонтия</td><td>2 800–4 800</td></tr>
-            </tbody>
-          </table>
+
+          <div class="map">
+            <iframe
+              title="Карта: клиника «Пинь Чжэн», Фуюань"
+              src="https://yandex.ru/map-widget/v1/?ll=134.295738%2C48.358810&amp;z=16&amp;pt=134.295738%2C48.358810%2Cpm2rdm"
+              loading="lazy" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="doctors">
+    <section class="section section--soft" id="doctors">
       <div class="container">
-        <p class="kicker" data-i18n="doctors.kicker">Врачи</p>
-        <h2 class="section__title" data-i18n="doctors.title">Наши врачи</h2>
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="doctors.title">Врачи</h2>
+          <p class="section-head__note" data-i18n="doctors.note">Скоро здесь появятся фото и опыт врачей клиники.</p>
+        </div>
         <div class="doctors">
           <article class="doctor is-placeholder">
             <div class="doctor__photo" aria-hidden="true"></div>
@@ -258,76 +322,67 @@
             <h3 data-i18n="doctors.name">Имя врача</h3>
             <p data-i18n="doctors.role">Специализация · стаж</p>
           </article>
+          <div class="doctor-cta">
+            <p class="doctor-cta__title" data-i18n="doctors.ctaTitle">Не знаете, к какому врачу?</p>
+            <p data-i18n="doctors.ctaText">Начните с бесплатного осмотра: врач посмотрит и составит план лечения.</p>
+            <a class="link-arrow" href="#booking"><span data-i18n="doctors.ctaLink">Записаться на осмотр</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--tint" id="reviews">
+    <section class="section" id="reviews">
       <div class="container reviews">
-        <div>
-          <p class="kicker" data-i18n="reviews.kicker">Отзывы</p>
-          <h2 class="section__title" data-i18n="reviews.title">Что говорят пациенты</h2>
-          <div class="review is-placeholder"><p data-i18n="reviews.empty">Здесь будут отзывы пациентов.</p></div>
-          <div class="review is-placeholder"><p data-i18n="reviews.empty">Здесь будут отзывы пациентов.</p></div>
-        </div>
         <figure class="reviews__photo">
           <button type="button" class="zoom" data-full="img/guests.jpg"><img src="img/guests.jpg" alt="Гости из России в клинике «Пинь Чжэн»" data-i18n-attr="alt:reviews.photo" width="1200" height="899" loading="lazy"></button>
           <figcaption data-i18n="reviews.photo">Гости из России в клинике «Пинь Чжэн»</figcaption>
         </figure>
-      </div>
-    </section>
-
-    <section class="section" id="route">
-      <div class="container">
-        <p class="kicker" data-i18n="route.kicker">Как добраться</p>
-        <h2 class="section__title" data-i18n="route.title">Как нас найти в Фуюане</h2>
-
-        <div class="route">
-          <div>
-            <ol class="steps">
-              <li>
-                <h3 data-i18n="route.step1.title">Из Хабаровска до Фуюаня</h3>
-                <p data-i18n="route.step1.text">По Амуру. Расписание и билеты — на сайте <a href="https://khabarovskvodtrans.ru" target="_blank" rel="noopener">khabarovskvodtrans.ru</a>.</p>
-              </li>
-              <li>
-                <h3 data-i18n="route.step2.title">От порта — на такси</h3>
-                <p data-i18n="route.step2.text">Покажите водителю адрес на китайском: нажмите «Показать таксисту» ниже.</p>
-              </li>
-              <li>
-                <h3 data-i18n="route.step3.title">Пешком или на машине</h3>
-                <p data-i18n="route.step3.text">Постройте маршрут в Яндекс Картах: точка клиники уже отмечена.</p>
-              </li>
-            </ol>
-
-            <div class="address">
-              <p class="address__label" data-i18n="route.address">Адрес</p>
-              <p class="address__ru" data-lang-only="ru">Китай, провинция Хэйлунцзян, г. Фуюань, ул. Инбинь, д. 93</p>
-              <p class="address__zh" lang="zh-CN">黑龙江省抚远市迎宾路93号<br>品正口腔门诊部</p>
-              <div class="address__actions">
-                <button type="button" class="btn btn--primary btn--sm" id="taxi-open" data-i18n="route.taxi">Показать таксисту</button>
-                <button type="button" class="btn btn--line btn--sm" id="address-copy" data-i18n="route.copy">Скопировать адрес</button>
-                <a class="btn btn--line btn--sm" data-lang-only="ru" href="https://yandex.ru/maps/?rtext=~48.358810%2C134.295738&amp;rtt=auto" target="_blank" rel="noopener">Маршрут в Яндекс Картах</a>
-                <a class="btn btn--line btn--sm" data-lang-only="zh" hidden lang="zh-CN" href="https://uri.amap.com/marker?position=134.295738,48.358810&amp;name=%E5%93%81%E6%AD%A3%E5%8F%A3%E8%85%94%E9%97%A8%E8%AF%8A%E9%83%A8&amp;coordinate=wgs84&amp;callnative=1" target="_blank" rel="noopener">高德地图导航</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="map">
-            <iframe
-              title="Карта: клиника «Пинь Чжэн», Фуюань"
-              src="https://yandex.ru/map-widget/v1/?ll=134.295738%2C48.358810&amp;z=16&amp;pt=134.295738%2C48.358810%2Cpm2rdm"
-              loading="lazy" allowfullscreen></iframe>
-          </div>
+        <div>
+          <h2 class="section-title" data-i18n="reviews.title">Отзывы пациентов</h2>
+          <blockquote class="quote is-placeholder">
+            <p data-i18n="reviews.empty">Здесь появятся отзывы пациентов клиники.</p>
+          </blockquote>
         </div>
       </div>
     </section>
 
-    <section class="section section--dark" id="contact">
-      <div class="container contact">
+    <section class="section section--soft" id="faq">
+      <div class="container faq">
+        <div class="faq__intro">
+          <h2 class="section-title" data-i18n="faq.title">Частые вопросы</h2>
+          <p data-i18n="faq.lead">Не нашли ответ? Оставьте заявку — ответим на русском.</p>
+          <a class="link-arrow" href="#booking"><span data-i18n="faq.cta">Задать вопрос</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary data-i18n="faq.q1">Сколько стоит консультация?</summary>
+            <p data-i18n="faq.a1">Осмотр и консультация бесплатные. После осмотра врач составит план лечения и назовёт точную стоимость.</p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq.q2">В какой валюте цены?</summary>
+            <p data-i18n="faq.a2">В юанях (¥). Точная стоимость зависит от плана лечения.</p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq.q3">Как найти клинику в Фуюане?</summary>
+            <p data-i18n="faq.a3">Клиника на ул. Инбинь, 93 — голубая вывеска с красным крестом. Таксисту покажите адрес на китайском из раздела «Как добраться».</p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq.q4">Я не говорю по-китайски. Как записаться?</summary>
+            <p data-i18n="faq.a4">Оставьте заявку на сайте: мы свяжемся с вами на русском языке и подберём время приёма.</p>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq.q5">Какое время работы?</summary>
+            <p data-i18n="faq.a5">Ежедневно с 08:00 до 18:00 по местному времени. По хабаровскому времени это 10:00–20:00.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="container booking__grid">
         <div>
-          <p class="kicker kicker--light" data-i18n="contact.kicker">Запись</p>
-          <h2 class="section__title" data-i18n="contact.title">Записаться на приём</h2>
-          <p class="contact__lead" data-i18n="contact.lead">Оставьте заявку: мы свяжемся с вами и ответим на русском языке.</p>
+          <h2 class="section-title" data-i18n="booking.title">Запишитесь на бесплатный осмотр</h2>
+          <p class="booking__lead" data-i18n="booking.lead">Оставьте имя и телефон: свяжемся с вами, ответим на вопросы и подберём время приёма.</p>
 
           <form class="form" id="booking-form" action="send.php" method="post" novalidate>
             <input type="hidden" name="lang" value="ru">
@@ -336,7 +391,7 @@
             </div>
             <div class="form__row">
               <label class="field">
-                <span data-i18n="form.name">Ваше имя</span>
+                <span data-i18n="form.name">Имя</span>
                 <input type="text" name="name" required maxlength="100" autocomplete="name">
               </label>
               <label class="field">
@@ -345,40 +400,36 @@
               </label>
             </div>
             <label class="field">
-              <span data-i18n="form.service">Услуга</span>
+              <span data-i18n="form.service">Услуга (необязательно)</span>
               <select name="service">
-                <option value="Консультация" data-i18n="form.option.consult">Консультация</option>
-                <option value="Имплантация" data-i18n="service.implant.title">Имплантация зубов</option>
-                <option value="Коронки и протезирование" data-i18n="service.crowns.title">Коронки и протезирование</option>
-                <option value="Лечение зубов" data-i18n="service.treatment.title">Лечение зубов</option>
-                <option value="Выравнивание зубов" data-i18n="service.ortho.title">Выравнивание зубов</option>
-                <option value="Профессиональная чистка" data-i18n="service.cleaning.title">Профессиональная чистка</option>
-                <option value="Детская стоматология" data-i18n="service.kids.title">Детская стоматология</option>
+                <option value="Консультация" data-i18n="service.consult">Осмотр и консультация</option>
+                <option value="Имплантация" data-i18n="service.implant">Имплантация зубов</option>
+                <option value="Коронки и протезирование" data-i18n="form.option.crowns">Коронки и протезирование</option>
+                <option value="Лечение зубов" data-i18n="form.option.treatment">Лечение зубов</option>
+                <option value="Профессиональная чистка" data-i18n="service.cleaning">Профессиональная чистка</option>
+                <option value="Выравнивание зубов" data-i18n="service.ortho">Эстетическая ортодонтия</option>
+                <option value="Детская стоматология" data-i18n="form.option.kids">Детская стоматология</option>
                 <option value="Другое" data-i18n="form.option.other">Другое</option>
               </select>
-            </label>
-            <label class="field">
-              <span data-i18n="form.comment">Комментарий</span>
-              <textarea name="comment" rows="3" maxlength="1000" placeholder="Например, когда планируете приехать" data-i18n-attr="placeholder:form.commentHint"></textarea>
             </label>
             <label class="checkbox">
               <input type="checkbox" name="consent" value="1" required>
               <span data-i18n="form.consent">Я согласен на обработку персональных данных и принимаю <a href="policy.html" target="_blank">политику конфиденциальности</a></span>
             </label>
-            <button type="submit" class="btn btn--gold btn--block" data-i18n="form.submit">Отправить заявку</button>
+            <button type="submit" class="btn btn--primary btn--lg btn--block" data-i18n="form.submit">Записаться на осмотр</button>
             <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
 
-        <aside class="contact__info">
+        <aside class="booking__info">
           <dl class="info">
             <div>
               <dt data-i18n="info.address">Адрес</dt>
-              <dd data-i18n="info.addressValue">г. Фуюань, ул. Инбинь, д. 93</dd>
+              <dd data-i18n="info.addressValue">Китай, г. Фуюань, ул. Инбинь, 93</dd>
             </div>
             <div>
               <dt data-i18n="info.hours">Часы работы</dt>
-              <dd data-i18n="info.hoursValue">Ежедневно 08:00–18:00 по местному времени (в Хабаровске на 2 часа больше)</dd>
+              <dd data-i18n="info.hoursValue">Ежедневно 08:00–18:00 по местному времени<br>(10:00–20:00 по Хабаровску)</dd>
             </div>
             <div>
               <dt data-i18n="info.email">Почта</dt>
@@ -402,23 +453,38 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner">
-      <div>
-        <p class="footer__name" data-i18n="footer.name">Стоматология «Пинь Чжэн»</p>
-        <p class="muted" data-i18n="footer.address">Китай, г. Фуюань, ул. Инбинь, д. 93</p>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <svg class="brand__logo" aria-hidden="true"><use href="#i-logo"/></svg>
+        <div>
+          <p class="footer__name" data-i18n="footer.name">Стоматология «Пинь Чжэн»</p>
+          <p data-i18n="footer.address">Китай, г. Фуюань, ул. Инбинь, 93</p>
+        </div>
       </div>
+      <nav class="footer__nav" aria-label="Разделы" data-i18n-attr="aria-label:footer.navLabel">
+        <a href="#services" data-i18n="nav.services">Услуги и цены</a>
+        <a href="#clinic" data-i18n="nav.clinic">Клиника</a>
+        <a href="#route" data-i18n="nav.route">Как добраться</a>
+        <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+        <a href="policy.html" data-i18n="footer.policy">Политика конфиденциальности</a>
+      </nav>
       <div class="footer__legal">
         <p class="footer__warning" data-i18n="footer.warning">Имеются противопоказания. Необходима консультация специалиста.</p>
-        <p class="muted"><a href="policy.html" data-i18n="footer.policy">Политика конфиденциальности</a> · © <span id="year">2026</span></p>
+        <p>© <span id="year">2026</span> <span data-i18n="footer.name">Стоматология «Пинь Чжэн»</span></p>
       </div>
     </div>
   </footer>
 
+  <div class="mobile-cta" id="mobile-cta">
+    <a class="btn btn--primary" href="#booking" data-i18n="nav.book">Записаться</a>
+    <a class="btn btn--outline" href="#route"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg><span data-i18n="mobile.route">Маршрут</span></a>
+  </div>
+
   <dialog class="taxi" id="taxi-dialog" aria-labelledby="taxi-title">
-    <p class="taxi__title" id="taxi-title" data-i18n="taxi.title">Покажите водителю</p>
+    <p class="taxi__title" id="taxi-title" data-i18n="ticket.label">Покажите водителю такси</p>
     <p class="taxi__zh" lang="zh-CN">您好！请送我到：<br><strong>抚远市迎宾路93号<br>品正口腔门诊部</strong></p>
     <p class="taxi__ru" data-lang-only="ru">Фуюань, ул. Инбинь, 93 — клиника «Пинь Чжэн»</p>
-    <button type="button" class="btn btn--primary" data-dialog-close data-i18n="common.close">Закрыть</button>
+    <button type="button" class="btn btn--dark" data-dialog-close data-i18n="common.close">Закрыть</button>
   </dialog>
 
   <dialog class="lightbox" id="lightbox" aria-label="Фото">

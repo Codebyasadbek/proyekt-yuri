@@ -23,7 +23,7 @@ function respond(bool $ok, bool $expectsJson): void
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode(['ok' => $ok]);
     } else {
-        header('Location: index.html?sent=' . ($ok ? '1' : '0') . '#contact', true, 303);
+        header('Location: index.html?sent=' . ($ok ? '1' : '0') . '#booking', true, 303);
     }
     exit;
 }

@@ -18,6 +18,7 @@ css/style.css   styles
 send.php        booking form handler
 policy.html     privacy policy (152-FZ)
 img/            optimized photos
+fonts/          Onest (OFL), self-hosted: Google Fonts is blocked in China
 ```
 
 ## Translations

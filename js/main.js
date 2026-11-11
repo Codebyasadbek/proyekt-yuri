@@ -133,6 +133,24 @@
     update();
   }
 
+  /* ---------- Mobile booking bar ---------- */
+
+  // Shown once the hero is scrolled past, hidden again over the booking form itself.
+  function initMobileCta() {
+    const bar = $('#mobile-cta');
+    const hero = $('#hero');
+    const booking = $('#booking');
+    if (!bar || !hero || !booking || !('IntersectionObserver' in window)) return;
+
+    const inView = new Map([[hero, true], [booking, false]]);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => inView.set(entry.target, entry.isIntersecting));
+      bar.classList.toggle('is-visible', !inView.get(hero) && !inView.get(booking));
+    });
+    observer.observe(hero);
+    observer.observe(booking);
+  }
+
   /* ---------- Toast ---------- */
 
   let toastTimer;
@@ -263,6 +281,7 @@
   initLanguage();
   initMenu();
   initHeaderShadow();
+  initMobileCta();
   initAddressCopy();
   initDialogs();
   initBookingForm();
