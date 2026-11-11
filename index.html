@@ -6,22 +6,34 @@
   <title>Стоматология «Пинь Чжэн» в Фуюане — лечение зубов в Китае рядом с Хабаровском</title>
   <meta name="description" content="Стоматологическая клиника «Пинь Чжэн» в Фуюане, 60 км от Хабаровска. Имплантация от 2 380 ¥, коронки, лечение и чистка зубов. Бесплатный осмотр, запись на русском.">
   <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://codebyasadbek.github.io/proyekt-yuri/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://codebyasadbek.github.io/proyekt-yuri/">
+  <meta property="og:site_name" content="Стоматология «Пинь Чжэн»">
   <meta property="og:title" content="Стоматология «Пинь Чжэн» в Фуюане">
   <meta property="og:description" content="Имплантация, коронки, лечение и чистка зубов в 60 км от Хабаровска. Бесплатный осмотр, запись на русском.">
-  <meta property="og:image" content="img/og.jpg">
+  <meta property="og:image" content="https://codebyasadbek.github.io/proyekt-yuri/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preload" href="fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=2">
-  <script src="js/i18n.js?v=2" defer></script>
-  <script src="js/main.js?v=2" defer></script>
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <script src="js/i18n.js?v=3" defer></script>
+  <script src="js/main.js?v=3" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Dentist",
     "name": "Стоматология «Пинь Чжэн» (品正口腔门诊部)",
-    "image": "img/hero.jpg",
+    "url": "https://codebyasadbek.github.io/proyekt-yuri/",
+    "image": "https://codebyasadbek.github.io/proyekt-yuri/img/hero.jpg",
+    "logo": "https://codebyasadbek.github.io/proyekt-yuri/apple-touch-icon.png",
+    "priceRange": "¥¥",
+    "currenciesAccepted": "CNY",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "ул. Инбинь, 93 (迎宾路93号)",
@@ -102,7 +114,7 @@
         <div class="hero__text">
           <p class="badge"><span class="badge__dot" aria-hidden="true"></span><span data-i18n="hero.badge">60 км от Хабаровска · принимаем пациентов из России</span></p>
           <h1 class="hero__title" data-i18n="hero.title">Лечение и&nbsp;имплантация зубов <span class="hl">в&nbsp;Фуюане</span></h1>
-          <p class="hero__lead" data-i18n="hero.lead">Стоматология «Пинь Чжэн» с цифровой диагностикой и отдельными кабинетами. Осмотр и консультация бесплатно, запись на русском языке.</p>
+          <p class="hero__lead" data-i18n="hero.lead">Стоматология «Пинь&nbsp;Чжэн» с цифровой диагностикой и отдельными кабинетами. Осмотр и консультация бесплатно, запись на русском языке.</p>
 
           <ul class="hero__prices">
             <li class="hero__price hero__price--free"><b>0 ¥</b><span data-i18n="hero.price1">осмотр и консультация</span></li>
@@ -117,7 +129,11 @@
         </div>
 
         <div class="hero__media">
-          <img src="img/hero.jpg" alt="Вывеска клиники «Пинь Чжэн» на улице Инбинь" data-i18n-attr="alt:hero.photo" width="1599" height="899" fetchpriority="high">
+          <!-- The photo is cropped into a taller frame, so it renders wider than its column. -->
+          <picture>
+            <source type="image/webp" srcset="img/hero-640.webp 640w, img/hero-960.webp 960w, img/hero-1280.webp 1280w, img/hero-1600.webp 1600w" sizes="(max-width: 960px) 110vw, 1050px">
+            <img src="img/hero.jpg" alt="Вывеска клиники «Пинь Чжэн» на улице Инбинь" data-i18n-attr="alt:hero.photo" width="1599" height="899" fetchpriority="high">
+          </picture>
           <div class="hero__card">
             <svg class="hero__card-logo" width="40" height="40" aria-hidden="true"><use href="#i-logo"/></svg>
             <div>
@@ -194,7 +210,12 @@
     <section class="section section--soft" id="clinic">
       <div class="container clinic">
         <figure class="clinic__media">
-          <button type="button" class="zoom" data-full="img/reception.jpg"><img src="img/reception.jpg" alt="Ресепшн клиники" data-i18n-attr="alt:gallery.reception" width="941" height="629" loading="lazy"></button>
+          <button type="button" class="zoom" data-full="img/reception.jpg">
+            <picture>
+              <source type="image/webp" srcset="img/reception-640.webp 640w, img/reception-940.webp 940w" sizes="(max-width: 960px) 110vw, 745px">
+              <img src="img/reception.jpg" alt="Ресепшн клиники" data-i18n-attr="alt:gallery.reception" width="941" height="629" loading="lazy">
+            </picture>
+          </button>
         </figure>
 
         <div class="clinic__text">
@@ -202,22 +223,18 @@
           <p class="clinic__lead" data-i18n="clinic.lead">Ресепшн и зона ожидания, отдельные кабинеты для лечения, рентгена и детского приёма.</p>
           <ol class="features">
             <li>
-              <span class="features__num">01</span>
               <h3 data-i18n="clinic.f1.title">Цифровая диагностика</h3>
               <p data-i18n="clinic.f1.text">Панорамный рентген, снимки на экране прямо в кабинете</p>
             </li>
             <li>
-              <span class="features__num">02</span>
               <h3 data-i18n="clinic.f2.title">Стерильность</h3>
               <p data-i18n="clinic.f2.text">Строгое соблюдение правил стерилизации</p>
             </li>
             <li>
-              <span class="features__num">03</span>
               <h3 data-i18n="clinic.f3.title">Отдельные кабинеты</h3>
               <p data-i18n="clinic.f3.text">Просторный светлый зал и отдельные лечебные кабинеты</p>
             </li>
             <li>
-              <span class="features__num">04</span>
               <h3 data-i18n="clinic.f4.title">Детский кабинет</h3>
               <p data-i18n="clinic.f4.text">Своё кресло и спокойная обстановка для детей</p>
             </li>
@@ -228,23 +245,48 @@
       <div class="container">
         <div class="photo-strip">
           <figure>
-            <button type="button" class="zoom" data-full="img/xray.jpg"><img src="img/xray.jpg" alt="Рентген-кабинет" data-i18n-attr="alt:gallery.xray" width="1000" height="612" loading="lazy"></button>
+            <button type="button" class="zoom" data-full="img/xray.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/xray-thumb.webp">
+                <img src="img/xray.jpg" alt="Рентген-кабинет" data-i18n-attr="alt:gallery.xray" width="480" height="640" loading="lazy">
+              </picture>
+            </button>
             <figcaption data-i18n="gallery.xray">Рентген-кабинет</figcaption>
           </figure>
           <figure>
-            <button type="button" class="zoom" data-full="img/implant.jpg"><img src="img/implant.jpg" alt="Хирургический кабинет" data-i18n-attr="alt:gallery.surgery" width="1000" height="750" loading="lazy"></button>
+            <button type="button" class="zoom" data-full="img/implant.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/implant-thumb.webp">
+                <img src="img/implant.jpg" alt="Хирургический кабинет" data-i18n-attr="alt:gallery.surgery" width="480" height="640" loading="lazy">
+              </picture>
+            </button>
             <figcaption data-i18n="gallery.surgery">Хирургический кабинет</figcaption>
           </figure>
           <figure>
-            <button type="button" class="zoom" data-full="img/cabinet-2.jpg"><img src="img/cabinet-2.jpg" alt="Кабинет эстетической стоматологии" data-i18n-attr="alt:gallery.aesthetic" width="1000" height="650" loading="lazy"></button>
+            <button type="button" class="zoom" data-full="img/cabinet-2.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/cabinet-2-thumb.webp">
+                <img src="img/cabinet-2.jpg" alt="Кабинет эстетической стоматологии" data-i18n-attr="alt:gallery.aesthetic" width="480" height="640" loading="lazy">
+              </picture>
+            </button>
             <figcaption data-i18n="gallery.aesthetic">Эстетическая стоматология</figcaption>
           </figure>
           <figure>
-            <button type="button" class="zoom" data-full="img/kids.jpg"><img src="img/kids.jpg" alt="Детский кабинет" data-i18n-attr="alt:gallery.kids" width="1000" height="650" loading="lazy"></button>
+            <button type="button" class="zoom" data-full="img/kids.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/kids-thumb.webp">
+                <img src="img/kids.jpg" alt="Детский кабинет" data-i18n-attr="alt:gallery.kids" width="480" height="640" loading="lazy">
+              </picture>
+            </button>
             <figcaption data-i18n="gallery.kids">Детский кабинет</figcaption>
           </figure>
           <figure>
-            <button type="button" class="zoom" data-full="img/cabinet.jpg"><img src="img/cabinet.jpg" alt="Лечебный кабинет" data-i18n-attr="alt:gallery.cabinet" width="800" height="1422" loading="lazy"></button>
+            <button type="button" class="zoom" data-full="img/cabinet.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/cabinet-thumb.webp">
+                <img src="img/cabinet.jpg" alt="Лечебный кабинет" data-i18n-attr="alt:gallery.cabinet" width="480" height="640" loading="lazy">
+              </picture>
+            </button>
             <figcaption data-i18n="gallery.cabinet">Лечебный кабинет</figcaption>
           </figure>
         </div>
@@ -259,19 +301,16 @@
 
         <ol class="route-steps">
           <li>
-            <span class="route-steps__num">01</span>
             <h3 data-i18n="route.step1.title">Хабаровск → Фуюань</h3>
             <p data-i18n="route.step1.text">По Амуру. Расписание и билеты — на сайте <a href="https://khabarovskvodtrans.ru" target="_blank" rel="noopener">khabarovskvodtrans.ru</a></p>
           </li>
           <li>
-            <span class="route-steps__num">02</span>
             <h3 data-i18n="route.step2.title">Порт → клиника</h3>
             <p data-i18n="route.step2.text">На такси. Покажите водителю адрес на китайском — он ниже.</p>
           </li>
           <li>
-            <span class="route-steps__num">03</span>
             <h3 data-i18n="route.step3.title">Ищите голубую вывеску</h3>
-            <p data-i18n="route.step3.text">Ул. Инбинь, 93: голубая вывеска с красным крестом и надписью 品正口腔.</p>
+            <p data-i18n="route.step3.text">Ул. Инбинь, 93: голубая вывеска с красным крестом и надписью <span class="nowrap" lang="zh-CN">品正口腔</span>.</p>
           </li>
         </ol>
 
@@ -280,7 +319,7 @@
             <div class="ticket__body">
               <p class="ticket__label" data-i18n="ticket.label">Покажите водителю такси</p>
               <p class="ticket__zh" lang="zh-CN">抚远市迎宾路93号<br>品正口腔门诊部</p>
-              <p class="ticket__ru" data-lang-only="ru">Фуюань, ул. Инбинь, 93 — клиника «Пинь Чжэн»</p>
+              <p class="ticket__ru" data-lang-only="ru">Фуюань, ул. Инбинь, 93 — клиника «Пинь&nbsp;Чжэн»</p>
             </div>
             <div class="ticket__actions">
               <button type="button" class="btn btn--light" id="taxi-open"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#i-expand"/></svg><span data-i18n="ticket.expand">На весь экран</span></button>
@@ -334,8 +373,13 @@
     <section class="section" id="reviews">
       <div class="container reviews">
         <figure class="reviews__photo">
-          <button type="button" class="zoom" data-full="img/guests.jpg"><img src="img/guests.jpg" alt="Гости из России в клинике «Пинь Чжэн»" data-i18n-attr="alt:reviews.photo" width="1200" height="899" loading="lazy"></button>
-          <figcaption data-i18n="reviews.photo">Гости из России в клинике «Пинь Чжэн»</figcaption>
+          <button type="button" class="zoom" data-full="img/guests.jpg">
+            <picture>
+              <source type="image/webp" srcset="img/guests-640.webp 640w, img/guests-1200.webp 1200w" sizes="(max-width: 960px) 100vw, 565px">
+              <img src="img/guests.jpg" alt="Гости из России в клинике «Пинь Чжэн»" data-i18n-attr="alt:reviews.photo" width="1200" height="899" loading="lazy">
+            </picture>
+          </button>
+          <figcaption data-i18n="reviews.photo">Гости из России в клинике «Пинь&nbsp;Чжэн»</figcaption>
         </figure>
         <div>
           <h2 class="section-title" data-i18n="reviews.title">Отзывы пациентов</h2>
@@ -457,7 +501,7 @@
       <div class="footer__brand">
         <svg class="brand__logo" width="40" height="40" aria-hidden="true"><use href="#i-logo"/></svg>
         <div>
-          <p class="footer__name" data-i18n="footer.name">Стоматология «Пинь Чжэн»</p>
+          <p class="footer__name" data-i18n="footer.name">Стоматология «Пинь&nbsp;Чжэн»</p>
           <p data-i18n="footer.address">Китай, г. Фуюань, ул. Инбинь, 93</p>
         </div>
       </div>
@@ -470,7 +514,7 @@
       </nav>
       <div class="footer__legal">
         <p class="footer__warning" data-i18n="footer.warning">Имеются противопоказания. Необходима консультация специалиста.</p>
-        <p>© <span id="year">2026</span> <span data-i18n="footer.name">Стоматология «Пинь Чжэн»</span></p>
+        <p>© <span id="year">2026</span> <span data-i18n="footer.name">Стоматология «Пинь&nbsp;Чжэн»</span></p>
       </div>
     </div>
   </footer>
@@ -483,7 +527,7 @@
   <dialog class="taxi" id="taxi-dialog" aria-labelledby="taxi-title">
     <p class="taxi__title" id="taxi-title" data-i18n="ticket.label">Покажите водителю такси</p>
     <p class="taxi__zh" lang="zh-CN">您好！请送我到：<br><strong>抚远市迎宾路93号<br>品正口腔门诊部</strong></p>
-    <p class="taxi__ru" data-lang-only="ru">Фуюань, ул. Инбинь, 93 — клиника «Пинь Чжэн»</p>
+    <p class="taxi__ru" data-lang-only="ru">Фуюань, ул. Инбинь, 93 — клиника «Пинь&nbsp;Чжэн»</p>
     <button type="button" class="btn btn--dark" data-dialog-close data-i18n="common.close">Закрыть</button>
   </dialog>
 

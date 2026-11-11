@@ -30,7 +30,7 @@
 :root {
   --ink: #0e1b24;
   --text: #3a4852;
-  --muted: #6e7b84;
+  --muted: #5f6c76;
   --line: #e3e9ec;
   --bg: #ffffff;
   --bg-soft: #f2f6f8;
@@ -95,6 +95,14 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+picture {
+  display: block;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 a {
@@ -933,6 +941,7 @@ html[lang="zh-CN"] h3 {
 }
 
 .features {
+  counter-reset: feature;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
@@ -942,16 +951,18 @@ html[lang="zh-CN"] h3 {
 }
 
 .features li {
+  counter-increment: feature;
   padding-top: 16px;
   border-top: 2px solid var(--ink);
 }
 
-.features__num {
+.features li::before {
+  content: counter(feature, decimal-leading-zero);
   display: block;
   margin-bottom: 10px;
   font-size: 13px;
   font-weight: 600;
-  color: var(--red);
+  color: var(--red-dark);
 }
 
 .features h3 {
@@ -1046,6 +1057,7 @@ html[lang="zh-CN"] h3 {
 /* ========== Route ========== */
 
 .route-steps {
+  counter-reset: step;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -1054,7 +1066,12 @@ html[lang="zh-CN"] h3 {
   list-style: none;
 }
 
-.route-steps__num {
+.route-steps li {
+  counter-increment: step;
+}
+
+.route-steps li::before {
+  content: counter(step, decimal-leading-zero);
   display: block;
   margin-bottom: 16px;
   font-size: 48px;
@@ -1176,7 +1193,7 @@ html[lang="zh-CN"] h3 {
     column-gap: 8px;
   }
 
-  .route-steps__num {
+  .route-steps li::before {
     grid-row: span 2;
     margin: 0;
     font-size: 36px;
@@ -1234,7 +1251,7 @@ html[lang="zh-CN"] h3 {
 }
 
 .doctor.is-placeholder h3 {
-  color: #9aa8b0;
+  color: var(--muted);
 }
 
 .doctor-cta {

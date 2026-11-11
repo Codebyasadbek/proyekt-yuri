@@ -12,9 +12,14 @@ const MAIL_TO = 'info@pinzhenstom.ru';
 const MAIL_FROM = 'noreply@pinzhenstom.ru'; // must be an address on the site's own domain
 const SITE_NAME = 'Пинь Чжэн';
 
+const TIMEZONE = 'Asia/Vladivostok'; // Khabarovsk time, shown in the email
+
 const MAX_SHORT_FIELD = 100;
 const MAX_COMMENT = 1000;
 const MIN_PHONE_LENGTH = 5;
+
+const RATE_LIMIT = 5;       // submissions allowed from one IP...
+const RATE_WINDOW = 3600;   // ...within this many seconds
 
 function respond(bool $ok, bool $expectsJson): void
 {
@@ -48,6 +53,26 @@ function encodeHeader(string $value): string
     return '=?UTF-8?B?' . base64_encode($value) . '?=';
 }
 
+/** Records this submission and reports whether the IP has gone over the limit. */
+function isRateLimited(string $ip): bool
+{
+    $file = sys_get_temp_dir() . '/pinzhen-form-' . md5($ip);
+    $now = time();
+    $saved = json_decode((string) @file_get_contents($file), true);
+    $recent = array_values(array_filter(
+        is_array($saved) ? $saved : [],
+        static fn ($time): bool => is_int($time) && $time > $now - RATE_WINDOW
+    ));
+
+    if (count($recent) >= RATE_LIMIT) {
+        return true;
+    }
+
+    $recent[] = $now;
+    @file_put_contents($file, json_encode($recent), LOCK_EX);
+    return false;
+}
+
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     http_response_code(405);
     exit;
@@ -71,6 +96,12 @@ if ($name === '' || mb_strlen($phone, 'UTF-8') < MIN_PHONE_LENGTH || !$hasConsen
     respond(false, $expectsJson);
 }
 
+if (isRateLimited($_SERVER['REMOTE_ADDR'] ?? 'unknown')) {
+    respond(false, $expectsJson);
+}
+
+date_default_timezone_set(TIMEZONE);
+
 $subject = sprintf('Заявка с сайта %s: %s', SITE_NAME, $name);
 
 $body = implode("\n", [
@@ -82,7 +113,7 @@ $body = implode("\n", [
     'Комментарий: ' . ($comment !== '' ? $comment : '—'),
     'Язык сайта: ' . $language,
     '',
-    'Отправлено: ' . date('d.m.Y H:i'),
+    'Отправлено: ' . date('d.m.Y H:i') . ' по Хабаровску',
 ]);
 
 $headers = implode("\r\n", [
