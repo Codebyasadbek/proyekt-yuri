@@ -1,0 +1,161 @@
+/**
+ * UI translations.
+ *
+ * Russian copy lives directly in index.html, so `ru` only holds the strings
+ * that are created from JavaScript. `zh` holds the full Chinese version.
+ * Keys match the `data-i18n` and `data-i18n-attr` attributes in the markup.
+ */
+window.I18N = {
+  ru: {
+    'route.copied': 'Адрес скопирован',
+    'form.sending': 'Отправляем…',
+    'form.success': 'Спасибо! Заявка отправлена, мы скоро свяжемся с вами.',
+    'form.error': 'Не получилось отправить. Попробуйте ещё раз или напишите нам на почту.',
+    'form.invalid': 'Заполните имя, телефон и отметьте согласие.',
+    'form.demo': 'Это демо-версия сайта: после переноса на хостинг заявка придёт на почту.'
+  },
+
+  zh: {
+    'meta.title': '品正口腔门诊部 · 抚远 | 种植牙、牙冠修复、牙齿治疗',
+    'meta.description': '抚远品正口腔门诊部：种植牙、牙冠修复、牙齿治疗与专业洁牙。免费检查与咨询，欢迎预约。',
+    'a11y.skip': '跳到正文',
+    'common.close': '关闭',
+
+    'brand.name': '品正口腔',
+    'brand.sub': '抚远 · 口腔门诊部',
+
+    'nav.label': '菜单',
+    'nav.about': '关于我们',
+    'nav.services': '服务与价格',
+    'nav.doctors': '医生团队',
+    'nav.route': '交通指南',
+    'nav.contact': '联系我们',
+    'nav.book': '预约',
+
+    'hero.eyebrow': '抚远市 · 距哈巴罗夫斯克60公里',
+    'hero.title': '品正口腔门诊部',
+    'hero.lead': '种植牙、牙冠修复、牙齿治疗与专业洁牙，配备现代化数字设备。免费检查与咨询，提供俄语预约服务。',
+    'hero.book': '预约就诊',
+    'hero.route': '如何到达',
+    'hero.chip.free': '免费检查',
+    'hero.chip.implant': '种植中心',
+    'hero.chip.kids': '儿童口腔',
+    'hero.chip.painless': '无痛舒适化诊疗',
+
+    'facts.label': '诊所简介',
+    'facts.free.title': '免费',
+    'facts.free.text': '检查与咨询',
+    'facts.digital.title': '数字化',
+    'facts.digital.text': '诊断与影像',
+    'facts.hours.text': '每天营业（北京时间）',
+    'facts.distance.title': '60公里',
+    'facts.distance.text': '距哈巴罗夫斯克',
+
+    'about.kicker': '关于我们',
+    'about.title': '抚远现代化口腔门诊',
+    'about.p1': '品正口腔门诊部集种植、修复、治疗及儿童口腔于一体，为您提供全面的口腔服务。',
+    'about.p2': '采用数字化设备诊断，为每位患者制定个性化治疗方案，并提供治疗后的个性化预防计划。',
+    'about.point1': '宽敞明亮的大厅',
+    'about.point2': '独立诊室',
+    'about.point3': '严格执行消毒规范',
+    'about.point4': '个性化治疗方案',
+
+    'gallery.reception': '前台',
+    'gallery.xray': '影像室',
+    'gallery.surgery': '外科诊室',
+    'gallery.aesthetic': '口腔美学',
+    'gallery.kids': '儿童诊室',
+    'gallery.cabinet': '诊室',
+
+    'services.kicker': '服务项目',
+    'services.title': '我们的服务',
+    'service.implant.title': '种植牙',
+    'service.implant.text': '以种植体修复缺失牙齿。',
+    'service.crowns.title': '牙冠与修复',
+    'service.crowns.text': '烤瓷冠、全瓷冠及全口义齿。',
+    'service.treatment.title': '牙齿治疗',
+    'service.treatment.text': '补牙、根管治疗、修复受损牙齿。',
+    'service.ortho.title': '牙齿矫正',
+    'service.ortho.text': '成人及儿童美学正畸。',
+    'service.gums.title': '牙周治疗',
+    'service.gums.text': '治疗牙龈疾病，预防牙齿脱落。',
+    'service.cleaning.title': '专业洁牙',
+    'service.cleaning.text': '去除牙结石与牙菌斑，制定预防方案。',
+    'service.kids.title': '儿童口腔',
+    'service.kids.text': '独立儿童诊室，让小朋友轻松就诊。',
+    'service.aesthetic.title': '口腔美学',
+    'service.aesthetic.text': '牙齿美白与全瓷贴面。',
+
+    'prices.title': '收费标准',
+    'prices.note': '价格单位为人民币（元）。具体费用以免费检查后医生的诊断为准。',
+    'prices.service': '项目',
+    'prices.price': '价格（元）',
+    'price.consult': '检查与咨询',
+    'price.free': '免费',
+    'price.cleaning': '专业洁牙',
+    'price.fillings': '补牙与修复',
+    'price.endo': '根管治疗',
+    'price.crowns': '烤瓷牙冠',
+    'price.ceramic': '全瓷牙冠',
+    'price.implant': '种植牙',
+    'price.dentures': '全口义齿',
+    'price.ortho': '美学正畸',
+
+    'doctors.kicker': '医生团队',
+    'doctors.title': '我们的医生',
+    'doctors.name': '医生姓名',
+    'doctors.role': '专业 · 从业年限',
+
+    'reviews.kicker': '患者评价',
+    'reviews.title': '患者怎么说',
+    'reviews.empty': '患者评价待补充。',
+    'reviews.photo': '俄罗斯客人到访品正口腔',
+
+    'route.kicker': '交通指南',
+    'route.title': '如何找到我们',
+    'route.step1.title': '从哈巴罗夫斯克到抚远',
+    'route.step1.text': '经黑龙江水路前往。船期与购票请访问 <a href="https://khabarovskvodtrans.ru" target="_blank" rel="noopener">khabarovskvodtrans.ru</a>。',
+    'route.step2.title': '从港口乘出租车',
+    'route.step2.text': '点击下方按钮，向司机出示中文地址即可。',
+    'route.step3.title': '步行或自驾',
+    'route.step3.text': '使用地图导航，诊所位置已标注。',
+    'route.address': '地址',
+    'route.taxi': '全屏显示地址',
+    'route.copy': '复制地址',
+    'route.copied': '地址已复制',
+
+    'contact.kicker': '预约',
+    'contact.title': '预约就诊',
+    'contact.lead': '请留下您的联系方式，我们会尽快与您联系。',
+
+    'form.name': '您的姓名',
+    'form.phone': '电话或微信',
+    'form.service': '服务项目',
+    'form.option.consult': '咨询',
+    'form.option.other': '其他',
+    'form.comment': '备注',
+    'form.commentHint': '例如：计划到访时间',
+    'form.consent': '我同意处理个人信息并接受<a href="policy.html" target="_blank">隐私政策</a>',
+    'form.submit': '提交预约',
+    'form.sending': '正在提交…',
+    'form.success': '提交成功！我们会尽快与您联系。',
+    'form.error': '提交失败，请稍后重试或通过邮件联系我们。',
+    'form.invalid': '请填写姓名、电话，并勾选同意。',
+    'form.demo': '这是网站演示版本：正式上线后，预约信息将发送至邮箱。',
+
+    'info.address': '地址',
+    'info.addressValue': '黑龙江省抚远市迎宾路93号',
+    'info.hours': '营业时间',
+    'info.hoursValue': '每天 08:00–18:00（北京时间）',
+    'info.email': '邮箱',
+    'info.wechat': '微信预约',
+    'info.wechatText': '微信扫码，预约更方便。',
+
+    'footer.name': '品正口腔门诊部',
+    'footer.address': '黑龙江省抚远市迎宾路93号',
+    'footer.warning': '具体治疗方案请咨询专业医生。',
+    'footer.policy': '隐私政策',
+
+    'taxi.title': '请出示给司机'
+  }
+};
