@@ -42,7 +42,7 @@ window.I18N = {
     'hero.price1': '检查与咨询',
     'hero.price2.value': '198 ¥起',
     'hero.price2': '专业洁牙',
-    'hero.price3.value': '2 380 ¥起',
+    'hero.price3.value': '3 800 ¥起',
     'hero.price3': '种植牙',
     'hero.route': '如何到达',
     'hero.photo': '迎宾路上的品正口腔招牌',
